@@ -1,0 +1,68 @@
+.header {
+  min-height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  .logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: 5rem;
+    width: 5rem;
+    pointer-events: none;
+    transform-style: preserve-3d;
+
+    img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 5rem;
+      width: 5rem;
+    }
+    .back {
+      transform: translateZ(20px);
+    }
+    .left {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: calc(5rem - 0.5px);
+      width: 20px;
+      background-color: #d9b216;
+      transform: translate3d(-7.5px, 0, 10px) rotateY(90deg) rotateX(-3.5deg);
+    }
+    .right {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      height: calc(5rem - 10px);
+      width: 20px;
+      background-color: #d9b216;
+      transform: translate3d(9.75px, 4.5px, 10px) rotateY(90deg);
+    }
+    .top {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: calc(5rem - 0.298rem);
+      height: 20px;
+      background-color: #ffeca1;
+      transform: translate3d(4.85px, -7.5px, 10px) rotateX(90deg)
+        rotateY(3.5deg);
+    }
+    .bottom {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: calc(5rem + 0px);
+      height: 20px;
+      background-color: #7e6500;
+      transform: translate3d(0px, 67px, 10px) rotateX(90deg) rotateY(-3.5deg);
+    }
+  }
+}
